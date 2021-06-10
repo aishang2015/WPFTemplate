@@ -1,0 +1,13 @@
+{
+  "author": "aishang2015",
+  "classifications": [ "Common/WPF" ],
+  "name": "WPF template created with dotnetcore",
+  "identity": "WPFTemplate",
+  "shortName": "wpftpl",
+  "tags": {
+    "language": "C#",
+    "type": "project"
+  },
+  "sourceName": "WPFTemplate",
+  "preferNameDirectory": true
+}
