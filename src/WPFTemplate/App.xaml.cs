@@ -9,6 +9,7 @@ using System.Windows;
 using WPFTemplate.Core;
 using WPFTemplate.Data;
 using WPFTemplate.Setting;
+using WPFTemplate.ViewModels;
 using WPFTemplate.Views;
 
 namespace WPFTemplate
@@ -52,6 +53,7 @@ namespace WPFTemplate
             HostBuilderContext hostContext,
             IServiceCollection services)
         {
+
             // 启动服务，此服务作为页面的主服务
             services.AddHostedService<AppHostedService>();
 
@@ -63,6 +65,7 @@ namespace WPFTemplate
 
             // 注册所有窗口
             services.AddTransient<HomeWindow>();
+            services.AddSingleton<HomeViewModel>();
         }
 
         /// <summary>

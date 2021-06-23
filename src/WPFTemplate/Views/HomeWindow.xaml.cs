@@ -1,5 +1,6 @@
 ﻿using System.Windows;
 using WPFTemplate.Data;
+using WPFTemplate.ViewModels;
 
 namespace WPFTemplate.Views
 {
@@ -10,10 +11,11 @@ namespace WPFTemplate.Views
     {
         private readonly AppDbContext _appDbContext;
 
-        public HomeWindow(AppDbContext appDbContext)
+        public HomeWindow(AppDbContext appDbContext,
+            HomeViewModel homeViewModel)
         {
             InitializeComponent();
-            _appDbContext = appDbContext;
+            DataContext = homeViewModel;
         }
     }
 }
